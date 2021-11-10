@@ -113,7 +113,7 @@ sections:
       type: FormBlock
       elementId: contact-form
       action: /.netlify/functions/submission_created
-      destination: ''
+      destination: 'ramon+caring-rabbit@stackbit.com'
       fields:
         - type: TextFormControl
           name: name
