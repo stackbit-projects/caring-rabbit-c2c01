@@ -27,7 +27,7 @@ exports.handler = async function (event, context, callback) {
     } catch (e) {
         callback(null, {
             statusCode: e?.response?.status ?? 500,
-            body: e?.response?.statusText ?? e.message
+            body: (e?.response?.statusText ?? e.message) + ' ' + log.join('\n')
         });
     }
 };
