@@ -8,6 +8,7 @@ exports.handler = async function (event, context, callback) {
     try {
         const url = process.env.STACKBIT_CONTACT_FORM_SUBMISSION_URL;
 
+        log.push('a');
         if (!url) {
             throw new Error('No Stackbit URL specified');
         }
