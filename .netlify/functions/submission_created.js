@@ -4,7 +4,7 @@ const axios = require('axios');
 
 // Handle the lambda invocation
 exports.handler = async function (event, context, callback) {
-    
+    let 
     try {
         const url = process.env.STACKBIT_CONTACT_FORM_SUBMISSION_URL;
 
