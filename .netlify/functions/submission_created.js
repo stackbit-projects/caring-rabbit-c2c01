@@ -13,6 +13,7 @@ exports.handler = async function (event, context, callback) {
             throw new Error('No Stackbit URL specified');
         }
 
+        log.push(`b ${url}`);
         const response = await axios({
             method: 'post',
             url,
