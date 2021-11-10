@@ -20,7 +20,7 @@ exports.handler = async function (event, context, callback) {
             data: JSON.parse(event.body)
         });
 
-        log.push(`b ${url}`);
+        log.push(`c ${response.data}`);
         callback(null, {
             statusCode: 200,
             body: response.data.status
